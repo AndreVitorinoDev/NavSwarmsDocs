@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___u_nav_swarms_function_library___stop_pathfind_on_actor_with_specific_manager___statics =
-[
-    [ "NavSwarmsFunctionLibrary_eventStopPathfindOnActorWithSpecificManager_Parms", "struct_z___construct___u_function___u_nav_swarms_function_library___stop_pathfind_on_actor_with_ad350354922746645dcf544e457a76da.html", null ]
-];

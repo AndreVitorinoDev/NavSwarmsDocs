@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___a_nav_swarms_manager___get_path_points___statics =
-[
-    [ "NavSwarmsManager_eventGetPathPoints_Parms", "struct_z___construct___u_function___a_nav_swarms_manager___get_path_points___statics_1_1_nav_swaa3a7d02deb7fced8582c44043d288014.html", null ]
-];
