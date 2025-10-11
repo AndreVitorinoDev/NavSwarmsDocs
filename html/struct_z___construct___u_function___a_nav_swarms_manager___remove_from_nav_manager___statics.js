@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___a_nav_swarms_manager___remove_from_nav_manager___statics =
+[
+    [ "NavSwarmsManager_eventRemoveFromNavManager_Parms", "struct_z___construct___u_function___a_nav_swarms_manager___remove_from_nav_manager___statics_1_1074e515425dba3687a4466e703646626.html", null ]
+];
