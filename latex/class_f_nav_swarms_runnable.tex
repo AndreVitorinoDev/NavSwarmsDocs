@@ -1,0 +1,164 @@
+\doxysection{FNav\+Swarms\+Runnable Class Reference}
+\hypertarget{class_f_nav_swarms_runnable}{}\label{class_f_nav_swarms_runnable}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+
+
+{\ttfamily \#include $<$Nav\+Swarms\+Runnable.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214}{FNav\+Swarms\+Runnable}} (\mbox{\hyperlink{struct_f_path_parameters}{FPath\+Parameters}} Path\+Parameters, \mbox{\hyperlink{class_a_nav_swarms_manager}{ANav\+Swarms\+Manager}} \texorpdfstring{$\ast$}{*}Nav\+Manager, int32 Owner\+ID, const bool b\+Is\+Persistent=false, float Delay\+Between\+Searches=0)
+\item 
+virtual bool \mbox{\hyperlink{class_f_nav_swarms_runnable_acc568a27905ede3d9a650e14fac2f669}{Init}} () override
+\item 
+virtual uint32 \mbox{\hyperlink{class_f_nav_swarms_runnable_a55a54be7da809a812331e07712f0859d}{Run}} () override
+\item 
+virtual void \mbox{\hyperlink{class_f_nav_swarms_runnable_ab24e631d024f191c2fd1e652cf1f4c55}{Stop}} () override
+\item 
+void \mbox{\hyperlink{class_f_nav_swarms_runnable_aa383dba96a2b6cc85a80f3bd259c1c36}{Kill}} ()
+\item 
+bool \mbox{\hyperlink{class_f_nav_swarms_runnable_aabb5c126fc84dc5cd2a223496d51a43f}{Is\+Finished}} () const
+\item 
+void \mbox{\hyperlink{class_f_nav_swarms_runnable_ab6b416cca2d3055500b4dd8b0d46d043}{Update\+Parameters}} (const \mbox{\hyperlink{struct_f_path_parameters}{FPath\+Parameters}} \&New\+Path\+Parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Threaded processing of the pathfinding, it has 2 modes\+:
+\begin{DoxyItemize}
+\item Persistent\+: by setting persistent to true the pathfinding will continuously run until stopped.
+\item Non\+Persistent\+: by setting persistent to false, the pathfinding will only run once.
+\end{DoxyItemize}
+
+\begin{DoxyRemark}{Remarks}
+Independent of mode of operation, when a path is found it will update the given \doxylink{struct_f_path_parameters}{FPath\+Parameters} path 
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\doxylink{struct_f_path_parameters}{FPath\+Parameters} 
+
+\doxylink{class_a_nav_swarms_manager}{ANav\+Swarms\+Manager} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8h_source_l00017}{17}} of file \mbox{\hyperlink{_nav_swarms_runnable_8h_source}{Nav\+Swarms\+Runnable.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_f_nav_swarms_runnable_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{FNavSwarmsRunnable()}{FNavSwarmsRunnable()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214} 
+FNav\+Swarms\+Runnable\+::\+FNav\+Swarms\+Runnable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_path_parameters}{FPath\+Parameters}}}]{Path\+Parameters}{, }\item[{\mbox{\hyperlink{class_a_nav_swarms_manager}{ANav\+Swarms\+Manager}} \texorpdfstring{$\ast$}{*}}]{Nav\+Manager}{, }\item[{int32}]{Owner\+ID}{, }\item[{const bool}]{b\+Is\+Persistent}{ = {\ttfamily false}, }\item[{float}]{Delay\+Between\+Searches}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path\+Parameters} & Parameters for pathfinding \\
+\hline
+{\em Nav\+Manager} & Navigation manager \\
+\hline
+{\em Owner\+ID} & Owning actor of this pathfinding thread \\
+\hline
+{\em b\+Is\+Persistent} & Is a persistent (constantly running) or One-\/shot thread \\
+\hline
+{\em Delay\+Between\+Searches} & When finishing a path how long should it take to search again \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_a92216de1239337204fddd4eaaed38767}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!````~FNavSwarmsRunnable@{\texorpdfstring{$\sim$}{\string~}FNavSwarmsRunnable}}
+\index{````~FNavSwarmsRunnable@{\texorpdfstring{$\sim$}{\string~}FNavSwarmsRunnable}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FNavSwarmsRunnable()}{\string~FNavSwarmsRunnable()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_a92216de1239337204fddd4eaaed38767} 
+FNav\+Swarms\+Runnable\+::\texorpdfstring{$\sim$}{\string~}\+FNav\+Swarms\+Runnable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_f_nav_swarms_runnable_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_f_nav_swarms_runnable_acc568a27905ede3d9a650e14fac2f669}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!Init@{Init}}
+\index{Init@{Init}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_acc568a27905ede3d9a650e14fac2f669} 
+bool FNav\+Swarms\+Runnable\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+(called by the thread runner) \begin{DoxyReturn}{Returns}
+Status boolean 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_aabb5c126fc84dc5cd2a223496d51a43f}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!IsFinished@{IsFinished}}
+\index{IsFinished@{IsFinished}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{IsFinished()}{IsFinished()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_aabb5c126fc84dc5cd2a223496d51a43f} 
+bool FNav\+Swarms\+Runnable\+::\+Is\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the thread has finished. \begin{DoxyReturn}{Returns}
+true if the thread finished, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8h_source_l00057}{57}} of file \mbox{\hyperlink{_nav_swarms_runnable_8h_source}{Nav\+Swarms\+Runnable.\+h}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_aa383dba96a2b6cc85a80f3bd259c1c36}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!Kill@{Kill}}
+\index{Kill@{Kill}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{Kill()}{Kill()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_aa383dba96a2b6cc85a80f3bd259c1c36} 
+void FNav\+Swarms\+Runnable\+::\+Kill (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stops the process and destroys this instance 
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_a55a54be7da809a812331e07712f0859d}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!Run@{Run}}
+\index{Run@{Run}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_a55a54be7da809a812331e07712f0859d} 
+uint32 FNav\+Swarms\+Runnable\+::\+Run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+(called by the thread runner) \begin{DoxyReturn}{Returns}
+Status integer 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_ab24e631d024f191c2fd1e652cf1f4c55}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!Stop@{Stop}}
+\index{Stop@{Stop}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_ab24e631d024f191c2fd1e652cf1f4c55} 
+void FNav\+Swarms\+Runnable\+::\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Interrupts the current running process 
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_runnable_ab6b416cca2d3055500b4dd8b0d46d043}\index{FNavSwarmsRunnable@{FNavSwarmsRunnable}!UpdateParameters@{UpdateParameters}}
+\index{UpdateParameters@{UpdateParameters}!FNavSwarmsRunnable@{FNavSwarmsRunnable}}
+\doxysubsubsection{\texorpdfstring{UpdateParameters()}{UpdateParameters()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_runnable_ab6b416cca2d3055500b4dd8b0d46d043} 
+void FNav\+Swarms\+Runnable\+::\+Update\+Parameters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_f_path_parameters}{FPath\+Parameters}} \&}]{New\+Path\+Parameters}{}\end{DoxyParamCaption})}
+
+Updates the pathfinding parameters, useful for changing the start and end positions \begin{DoxyRemark}{Remarks}
+Note that these parameters will only take effect on the next run. Updating the parameters on a One-\/\+Shot thread does nothing. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Path\+Parameters} & New parameters for the pathfinding \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_nav_swarms_runnable_8cpp_source}{Nav\+Swarms\+Runnable.\+cpp}}.
+

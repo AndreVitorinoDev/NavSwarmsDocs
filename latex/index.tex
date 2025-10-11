@@ -1,0 +1,29 @@
+\chapter{Nav\+Swarms }
+\hypertarget{index}{}\label{index}\index{NavSwarms@{NavSwarms}}
+\label{index_md__c_1_2_users_2andre_2_documents_2_unreal_01_projects_2_andre_a_i_navigation_2_plugins_2_nav_swarms_2_r_e_a_d_m_e}%
+\Hypertarget{index_md__c_1_2_users_2andre_2_documents_2_unreal_01_projects_2_andre_a_i_navigation_2_plugins_2_nav_swarms_2_r_e_a_d_m_e}%
+
+
+\doxylink{class_nav_swarms}{Nav\+Swarms} is a Unreal plugin to provide 3D pathfinding for Unreal Engine 5. Primarily designed for baking large voxel grids, and using the provided \doxylink{class_a_nav_swarms_manager}{ANav\+Swarms\+Manager} to queue pathfinding queries using an optimized custom A\texorpdfstring{$\ast$}{*} algorithm.
+
+This plugin is focused on providing an easy and efficient way to manage flying AI which needs a system that is not covered by the Unreal native AI navigation system.
+
+Key features\+:
+\begin{DoxyItemize}
+\item Navigation Manager Actor for configuring the map navigation grid
+\item API to manage pathfinding queries and retrieve finished paths
+\item Threaded pathfinding which can run continuously or just once
+\item Baked pathfinding grid, allowing fast load on large maps
+\item Efficient debug visualization of grid size, occupied voxels and even current paths
+\end{DoxyItemize}\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Getting started}{Getting started}}\label{index_autotoc_md1}
+Simply drag the contents to the {\ttfamily Plugins} folder on your Unreal project, if there\textquotesingle{}s no {\ttfamily Plugins} folder you can create a new folder with that exact name. Make sure that Visual Studio 2022 is also installed with the {\ttfamily game development with C++} modules.
+
+Locate the {\ttfamily .uproject} of your project, right click and select {\ttfamily Generate Visual Studio Project}
+
+Finally go to Edid -\/\texorpdfstring{$>$}{>} Plugins and make sure that the plugin is enabled, if it\textquotesingle{}s already enabled don\textquotesingle{}t worry, you can just skip this step.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Future features}{Future features}}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Placeable volume Actor or component to dynamically change movable objects
+\item Infinite world support
+\item Custom AI nodes 
+\end{DoxyItemize}

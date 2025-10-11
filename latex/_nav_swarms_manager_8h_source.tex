@@ -1,0 +1,100 @@
+\doxysection{Nav\+Swarms\+Manager.\+h}
+\hypertarget{_nav_swarms_manager_8h_source}{}\label{_nav_swarms_manager_8h_source}\index{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/NavSwarmsManager.h@{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/NavSwarmsManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}NavTaskData.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}Assets/NavSwarmsDataAsset.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}PathFinding/NavSwarmsPathfinder.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}Voxels/NavVoxel.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}NavSwarmsManager.generated.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00009}00009\ DECLARE\_LOG\_CATEGORY\_EXTERN(NavSwarms\_Log,\ Log,\ All);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00011}00011\ UCLASS()}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00012}\mbox{\hyperlink{class_a_nav_swarms_manager}{00012}}\ class\ NAVSWARMS\_API\ ANavSwarmsManager\ :\ public\ AActor}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00014}00014\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00016}00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00017}00017\ \ \ \ \ ANavSwarmsManager();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00018}00018\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00019}00019\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00020}00020\ \ \ \ \ TArray<TEnumAsByte<ECollisionChannel>>\ ObstacleQueryChannels;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00021}00021\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00022}00022\ \ \ \ \ TArray<TObjectPtr<AActor>>\ ActorsToIgnoreForCollision;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00023}00023\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00024}00024\ \ \ \ \ FIntVector\ VoxelCount;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00025}00025\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00026}00026\ \ \ \ \ uint32\ VoxelSize;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00027}00027\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00028}00028\ \ \ \ \ TObjectPtr<UNavSwarmsDataAsset>\ NavSwarmsDataAsset;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00030}00030\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsPathGen"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00031}00031\ \ \ \ \ int32\ PathResolution\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00032}00032\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsPathGen"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ SmoothPath\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00034}00034\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsPathGen"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{float}\ SmoothAmount\ =\ 1.f;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00047}00047\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_nav_swarms_manager_a169dae28f4139be82ab492451c87543e}{StartPathSearchAsync}}(int32\ OwnerID,\ \textcolor{keyword}{const}\ FVector\ Start,\ \textcolor{keyword}{const}\ FVector\ End,}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ bIsPersistent\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{float}\ DelayBetweenSearches\ =\ 0);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00058}00058\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00059}00059\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_nav_swarms_manager_ac027cf119f33c69afae1fdad66ea8751}{StartPathSearch}}(\textcolor{keyword}{const}\ FVector\ Start,\ \textcolor{keyword}{const}\ FVector\ End)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00060}00060\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00066}00066\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_nav_swarms_manager_ab8dd20fbba762005c919d8393f904d4c}{StopPathSearch}}(\textcolor{keyword}{const}\ int32\ OwnerID);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00076}00076\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_nav_swarms_manager_a1ed363a259c905418eadc9d26a98b57c}{UpdatePathSearch}}(\textcolor{keyword}{const}\ int32\ OwnerID,\ \textcolor{keyword}{const}\ FVector\ NewStart,\ \textcolor{keyword}{const}\ FVector\ NewEnd);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00078}00078\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00084}00084\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00085}00085\ \ \ \ \ TArray<FVector>\&\ \mbox{\hyperlink{class_a_nav_swarms_manager_a63a32835c0300777a8f11b19e19b63ad}{GetPathPoints}}(\textcolor{keyword}{const}\ int32\ OwnerID);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00093}00093\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00094}00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_nav_swarms_manager_a8c63adcf6f3badffc1fd290ee1004d90}{RemoveFromNavManager}}(\textcolor{keyword}{const}\ int32\ OwnerID,\ \textcolor{keywordtype}{bool}\ RemoveInternalKey\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00100}\mbox{\hyperlink{class_a_nav_swarms_manager_a85dff1dae25ca0dd4d63f963c108e4e0}{00100}}\ \ \ \ \ \mbox{\hyperlink{class_f_nav_swarms_pathfinder}{FNavSwarmsPathfinder}}*\ \mbox{\hyperlink{class_a_nav_swarms_manager_a85dff1dae25ca0dd4d63f963c108e4e0}{GetPathfinder}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ Pathfinder;\ \}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00107}00107\ \ \ \ \ \textcolor{keywordtype}{void}\ OnPathReady(\textcolor{keyword}{const}\ int32\ OwnerID,\ \textcolor{keyword}{const}\ TArray<FVector>\&\ Path);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00109}00109\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00110}00110\ \ \ \ \ FVector\ GetPathPointAtDistance(\textcolor{keyword}{const}\ int32\ OwnerID,\ \textcolor{keyword}{const}\ FVector\ ActorLocation,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ Distance);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00112}00112\ \textcolor{preprocessor}{\#if\ WITH\_EDITORONLY\_DATA}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00113}00113\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsDebug"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00114}00114\ \ \ \ \ bool\ bDebugCells;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00115}00115\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsDebug"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{bool}\ bDebugOccupied;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00117}00117\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsDebug"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{bool}\ bDebugBounds;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00119}00119\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsDebug"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00120}00120\ \ \ \ \ \textcolor{keywordtype}{bool}\ bDebugPaths;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00121}00121\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00122}00122\ \textcolor{preprocessor}{\#if\ WITH\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00123}00123\ \ \ \ \ UFUNCTION(CallInEditor,\ Category\ =\ \textcolor{stringliteral}{"{}NavSwarmsBake"{}})}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00124}00124\ \ \ \ \ void\ BakeNavData();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00125}00125\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00126}00126\ \ \ \ \ \textcolor{keywordtype}{void}\ DebugVoxels()\ const;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00127}00127\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00129}00129\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00130}00130\ \ \ \ \ TArray<FNavVoxel>\ NavVoxels;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00131}00131\ \ \ \ \ TArray<FNavVoxel>\ NavVoxelsOccupied;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00132}00132\ \ \ \ \ \mbox{\hyperlink{class_f_nav_swarms_pathfinder}{FNavSwarmsPathfinder}}*\ Pathfinder;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00134}00134\ \ \ \ \ TMap<int32,\ FNavTaskData>\ TaskDataMap;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00135}00135\ \ \ \ \ TArray<FVector>\ Empty;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00137}00137\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginPlay()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00138}00138\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginDestroy()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00139}00139\ \textcolor{preprocessor}{\#if\ WITH\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00140}00140\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ Tick(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00141}00141\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ ShouldTickIfViewportsOnly()\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00142}00142\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_manager_8h_source_l00143}00143\ \};}
+
+\end{DoxyCode}

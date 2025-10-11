@@ -1,0 +1,31 @@
+\doxysection{Nav\+Swarms\+Pathfinder.\+h}
+\hypertarget{_nav_swarms_pathfinder_8h_source}{}\label{_nav_swarms_pathfinder_8h_source}\index{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/PathFinding/NavSwarmsPathfinder.h@{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/PathFinding/NavSwarmsPathfinder.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}PathParameters.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}Assets/NavSwarmsDataAsset.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}Voxels/NavVoxel.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00012}\mbox{\hyperlink{class_f_nav_swarms_pathfinder}{00012}}\ \textcolor{keyword}{class\ }NAVSWARMS\_API\ \mbox{\hyperlink{class_f_nav_swarms_pathfinder_a4cc437952c166072b91524f176de8a16}{FNavSwarmsPathfinder}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00014}00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{class_f_nav_swarms_pathfinder_a4cc437952c166072b91524f176de8a16}{FNavSwarmsPathfinder}}(\mbox{\hyperlink{class_u_nav_swarms_data_asset}{UNavSwarmsDataAsset}}*\ NavDataAsset,\ TArray<FNavVoxel>\&\ NavVoxels);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00028}00028\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_f_nav_swarms_pathfinder_a92b94ece0330a98ff5447bbd86b378bd}{FindPath}}(\mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\&\ PathParameters,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\&\ StopTask);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00030}00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{class_u_nav_swarms_data_asset}{UNavSwarmsDataAsset}}*\ NavDataAsset;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00032}00032\ \ \ \ \ TArray<FNavVoxel>\&\ NavVoxels;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00034}00034\ \ \ \ \ TArray<FVector>\ GetPathData(\mbox{\hyperlink{struct_f_nav_voxel}{FNavVoxel}}*\ CurrentVoxel,\ \mbox{\hyperlink{struct_f_nav_voxel}{FNavVoxel}}*\ StartVoxel,\ \mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\&\ PathParameters);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{struct_f_nav_voxel}{FNavVoxel}}*\ GetNextVoxel(\mbox{\hyperlink{struct_f_nav_voxel}{FNavVoxel}}*\ CurrentVoxel,\ \mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\&\ PathParameters);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{struct_f_path_voxel}{FPathVoxel}}*\ GetPathVoxelFromNavVoxel(\mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\&\ PathParameters,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_f_nav_voxel}{FNavVoxel}}\&\ PathVoxel)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00038}00038\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&PathParameters.\mbox{\hyperlink{struct_f_path_parameters_a221fa85bb42ec9bfd8792bba1f22653c}{PathVoxels}}[PathVoxel.Index];}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_pathfinder_8h_source_l00041}00041\ \};}
+
+\end{DoxyCode}

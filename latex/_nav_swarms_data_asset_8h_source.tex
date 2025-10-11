@@ -1,0 +1,47 @@
+\doxysection{Nav\+Swarms\+Data\+Asset.\+h}
+\hypertarget{_nav_swarms_data_asset_8h_source}{}\label{_nav_swarms_data_asset_8h_source}\index{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/Assets/NavSwarmsDataAsset.h@{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/Assets/NavSwarmsDataAsset.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}CollisionQueryParams.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}NavSwarmsDataAsset.generated.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00014}00014\ UCLASS(BlueprintType)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00015}\mbox{\hyperlink{class_u_nav_swarms_data_asset}{00015}}\ class\ NAVSWARMS\_API\ \mbox{\hyperlink{class_u_nav_swarms_data_asset}{UNavSwarmsDataAsset}}\ :\ public\ UDataAsset}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00017}00017\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00019}00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00023}00023\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00024}\mbox{\hyperlink{class_u_nav_swarms_data_asset_a2978bb048fcf5778056edf124163a3ff}{00024}}\ \ \ \ \ FString\ \mbox{\hyperlink{class_u_nav_swarms_data_asset_a2978bb048fcf5778056edf124163a3ff}{Name}};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00025}00025\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_nav_swarms_data_asset_a11e883e2b16f963e4a23a26dc44dd388}{GetIndexFromLocalVector}}(const\ FVector\&\ InVec)\ const;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_nav_swarms_data_asset_aac1f5b59e3967baba5f3d4077f254256}{GetIndexFromWorldVector}}(const\ FVector\&\ InVec)\ const;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00039}00039\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00040}00040\ \textcolor{preprocessor}{\#if\ WITH\_EDITOR}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{void}\ BakeNavData(FIntVector\ GridSize,\ uint32\ VoxelSize,\ FVector\ Location,\ \textcolor{keyword}{const}\ int32\ Channels,}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ TArray<AActor*>\&\ IgnoredActors,\ \textcolor{keyword}{const}\ UWorld*\ World);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00056}00056\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00057}00057\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00058}00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00062}00062\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00063}00063\ \ \ \ \ FIntVector\ InternalGridSize;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00067}00067\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00068}00068\ \ \ \ \ \textcolor{keywordtype}{int}\ InternalVoxelSize;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00072}00072\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00073}00073\ \ \ \ \ FVector\ InternalCenter;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00077}00077\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{int}\ InternalDepth;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00082}00082\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00083}00083\ \ \ \ \ FString\ AttachedFilePath;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00084}00084\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00085}00085\ \ \ \ \ TArray<int>\ GetNeighbours(\textcolor{keyword}{const}\ FIntVector\ GridSize,\ \textcolor{keyword}{const}\ FIntVector\ SelfPosition)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00086}00086\ \textcolor{preprocessor}{\#if\ WITH\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00087}00087\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ PostLoad()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00088}00088\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ PostEditChangeProperty(FPropertyChangedEvent\&\ PropertyChangedEvent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00089}00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ BeginDestroy()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00090}00090\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_data_asset_8h_source_l00091}00091\ \};}
+
+\end{DoxyCode}

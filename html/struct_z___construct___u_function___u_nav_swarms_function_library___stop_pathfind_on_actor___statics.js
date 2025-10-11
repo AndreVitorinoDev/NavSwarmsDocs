@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___u_nav_swarms_function_library___stop_pathfind_on_actor___statics =
+[
+    [ "NavSwarmsFunctionLibrary_eventStopPathfindOnActor_Parms", "struct_z___construct___u_function___u_nav_swarms_function_library___stop_pathfind_on_actor___sta0db07a651bb77122c861b1f5e77080d0.html", null ]
+];

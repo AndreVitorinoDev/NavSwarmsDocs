@@ -1,0 +1,51 @@
+\doxysection{Nav\+Swarms\+Runnable.\+h}
+\hypertarget{_nav_swarms_runnable_8h_source}{}\label{_nav_swarms_runnable_8h_source}\index{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/Multithreading/NavSwarmsRunnable.h@{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/Multithreading/NavSwarmsRunnable.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}PathFinding/PathParameters.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}HAL/Runnable.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00006}00006\ \textcolor{keyword}{class\ }NAVSWARMS\_API\ \mbox{\hyperlink{class_a_nav_swarms_manager}{ANavSwarmsManager}};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00017}\mbox{\hyperlink{class_f_nav_swarms_runnable}{00017}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214}{FNavSwarmsRunnable}}\ :\ \textcolor{keyword}{public}\ FRunnable}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00018}00018\ \{}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00019}00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214}{FNavSwarmsRunnable}}(\mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\ PathParameters,\ ANavSwarmsManager*\ NavManager,\ int32\ OwnerID,}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ bIsPersistent\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{float}\ DelayBetweenSearches\ =\ 0);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_af9fa240b5e8fc084f66a464c82e9d214}{\string~FNavSwarmsRunnable}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00035}00035\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_acc568a27905ede3d9a650e14fac2f669}{Init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00041}00041\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00042}00042\ \ \ \ \ \textcolor{keyword}{virtual}\ uint32\ \mbox{\hyperlink{class_f_nav_swarms_runnable_a55a54be7da809a812331e07712f0859d}{Run}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00046}00046\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_ab24e631d024f191c2fd1e652cf1f4c55}{Stop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00051}00051\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00052}00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_aa383dba96a2b6cc85a80f3bd259c1c36}{Kill}}();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00057}\mbox{\hyperlink{class_f_nav_swarms_runnable_aabb5c126fc84dc5cd2a223496d51a43f}{00057}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_aabb5c126fc84dc5cd2a223496d51a43f}{IsFinished}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ bFinished;\ \}}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00058}00058\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00065}00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_f_nav_swarms_runnable_ab6b416cca2d3055500b4dd8b0d46d043}{UpdateParameters}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\&\ NewPathParameters);}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00066}00066\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00067}00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\ PathParameters;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00069}00069\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00070}00070\ \ \ \ \ \mbox{\hyperlink{struct_f_path_parameters}{FPathParameters}}\ UpdatedPathParameters;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00071}00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ bUpdateParameters;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00072}00072\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00073}00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ bIsPersistent;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{float}\ DelayBetweenSearches;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00075}00075\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00076}00076\ \ \ \ \ int32\ OwnerID;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{class_a_nav_swarms_manager}{ANavSwarmsManager}}*\ NavManager;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00078}00078\ \ \ \ \ FRunnableThread*\ Thread;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00079}00079\ \ \ \ \ FThreadSafeBool\ bFinished;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ bStopTask;}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00082}00082\ \ \ \ \ \textcolor{keywordtype}{void}\ RunOneShot();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00083}00083\ \ \ \ \ \textcolor{keywordtype}{void}\ RunPersistent();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00084}00084\ \ \ \ \ \textcolor{keywordtype}{void}\ Process();}
+\DoxyCodeLine{\Hypertarget{_nav_swarms_runnable_8h_source_l00085}00085\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,42 @@
+\doxysection{Nav\+Task\+Data.\+h}
+\hypertarget{_nav_task_data_8h_source}{}\label{_nav_task_data_8h_source}\index{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/NavTaskData.h@{C:/Users/andre/Documents/Unreal Projects/AndreAINavigation/Plugins/NavSwarms/Source/NavSwarms/Public/NavTaskData.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}Multithreading/NavSwarmsRunnable.h"{}}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00006}\mbox{\hyperlink{struct_f_nav_task_data}{00006}}\ \textcolor{keyword}{struct\ }NAVSWARMS\_API\ FNavTaskData}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00008}00008\ \ \ \ \ int32\ OwnerID;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00009}00009\ \ \ \ \ \mbox{\hyperlink{class_f_nav_swarms_runnable}{FNavSwarmsRunnable}}*\ Runnable;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00010}00010\ \ \ \ \ TArray<FVector>\ PathPoints;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00011}00011\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00012}00012\ \ \ \ \ FNavTaskData();}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00013}00013\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00014}00014\ \ \ \ \ FNavTaskData(\textcolor{keyword}{const}\ int32\ OwnerID,\ \mbox{\hyperlink{class_f_nav_swarms_runnable}{FNavSwarmsRunnable}}*\ Runnable,\ \textcolor{keyword}{const}\ TArray<FVector>\&\ PathPoints)}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00016}00016\ \ \ \ \ \ \ \ \ this-\/>OwnerID\ =\ OwnerID;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00017}00017\ \ \ \ \ \ \ \ \ this-\/>Runnable\ =\ Runnable;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ this-\/>PathPoints\ =\ PathPoints;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00020}00020\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00021}00021\ \ \ \ \ FNavTaskData(\textcolor{keyword}{const}\ int32\ OwnerID,\ \mbox{\hyperlink{class_f_nav_swarms_runnable}{FNavSwarmsRunnable}}*\ Runnable)}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ this-\/>OwnerID\ =\ OwnerID;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ this-\/>Runnable\ =\ Runnable;}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ this-\/>PathPoints\ =\ TArray<FVector>();}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00026}00026\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{void}\ CleanUp()}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00029}00029\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Runnable)}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ Runnable-\/>Kill();}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ Runnable\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nav_task_data_8h_source_l00036}00036\ \};}
+
+\end{DoxyCode}

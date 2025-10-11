@@ -1,0 +1,104 @@
+\doxysection{FNav\+Swarms\+Serializer Class Reference}
+\hypertarget{class_f_nav_swarms_serializer}{}\label{class_f_nav_swarms_serializer}\index{FNavSwarmsSerializer@{FNavSwarmsSerializer}}
+
+
+{\ttfamily \#include $<$Nav\+Swarms\+Serializer.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_f_nav_swarms_serializer_acda26f2e7702887ac13bf5684cc6af72}{Save\+To\+File}} (TArray$<$ \mbox{\hyperlink{struct_f_nav_voxel}{FNav\+Voxel}} $>$ \&Nav\+Voxels, const FString \&Name)
+\item 
+static TArray$<$ \mbox{\hyperlink{struct_f_nav_voxel}{FNav\+Voxel}} $>$ \mbox{\hyperlink{class_f_nav_swarms_serializer_a39e9bf7bfcfa5ee755583196243dc26a}{Load\+From\+File}} (const FString \&Name)
+\item 
+static void \mbox{\hyperlink{class_f_nav_swarms_serializer_a1945476eccf3e26ebacdd38c731f8226}{Rename\+File}} (const FString \&Path, const FString \&New\+Name)
+\item 
+static FString \mbox{\hyperlink{class_f_nav_swarms_serializer_a4e9c3d4abea0410a093aed774235dd61}{Get\+File\+Path}} (const FString \&Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Saves the FNav\+Voxels grid array into a .vox binary file with the given name so it can be later read, the file is always stored in the "{}/\+Content"{} folder, and it\textquotesingle{}s path is given to the \doxylink{class_u_nav_swarms_data_asset}{UNav\+Swarms\+Data\+Asset}, if it is deleted or modified the created file will also be deleted or modified.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_u_nav_swarms_data_asset}{UNav\+Swarms\+Data\+Asset} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_serializer_8h_source_l00011}{11}} of file \mbox{\hyperlink{_nav_swarms_serializer_8h_source}{Nav\+Swarms\+Serializer.\+h}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_f_nav_swarms_serializer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_f_nav_swarms_serializer_a4e9c3d4abea0410a093aed774235dd61}\index{FNavSwarmsSerializer@{FNavSwarmsSerializer}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!FNavSwarmsSerializer@{FNavSwarmsSerializer}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_serializer_a4e9c3d4abea0410a093aed774235dd61} 
+FString FNav\+Swarms\+Serializer\+::\+Get\+File\+Path (\begin{DoxyParamCaption}\item[{const FString \&}]{Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a path for a file with a given name, this file may or may not exist yet 
+\begin{DoxyParams}{Parameters}
+{\em Name} & File name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A path string to a file with that name 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_serializer_8h_source_l00037}{37}} of file \mbox{\hyperlink{_nav_swarms_serializer_8h_source}{Nav\+Swarms\+Serializer.\+h}}.
+
+\Hypertarget{class_f_nav_swarms_serializer_a39e9bf7bfcfa5ee755583196243dc26a}\index{FNavSwarmsSerializer@{FNavSwarmsSerializer}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!FNavSwarmsSerializer@{FNavSwarmsSerializer}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_serializer_a39e9bf7bfcfa5ee755583196243dc26a} 
+TArray$<$ \mbox{\hyperlink{struct_f_nav_voxel}{FNav\+Voxel}} $>$ FNav\+Swarms\+Serializer\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{const FString \&}]{Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads the FNav\+Voxels array from a .vox file with the given name 
+\begin{DoxyParams}{Parameters}
+{\em Name} & Name of the file to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A copy of the array loaded 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source}{Nav\+Swarms\+Serializer.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_serializer_a1945476eccf3e26ebacdd38c731f8226}\index{FNavSwarmsSerializer@{FNavSwarmsSerializer}!RenameFile@{RenameFile}}
+\index{RenameFile@{RenameFile}!FNavSwarmsSerializer@{FNavSwarmsSerializer}}
+\doxysubsubsection{\texorpdfstring{RenameFile()}{RenameFile()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_serializer_a1945476eccf3e26ebacdd38c731f8226} 
+void FNav\+Swarms\+Serializer\+::\+Rename\+File (\begin{DoxyParamCaption}\item[{const FString \&}]{Path}{, }\item[{const FString \&}]{New\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Renames the file at the current path to the given name, if the file doesn\textquotesingle{}t exist nothing happens 
+\begin{DoxyParams}{Parameters}
+{\em Path} & Current path to the file \\
+\hline
+{\em New\+Name} & New name for the file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source}{Nav\+Swarms\+Serializer.\+cpp}}.
+
+\Hypertarget{class_f_nav_swarms_serializer_acda26f2e7702887ac13bf5684cc6af72}\index{FNavSwarmsSerializer@{FNavSwarmsSerializer}!SaveToFile@{SaveToFile}}
+\index{SaveToFile@{SaveToFile}!FNavSwarmsSerializer@{FNavSwarmsSerializer}}
+\doxysubsubsection{\texorpdfstring{SaveToFile()}{SaveToFile()}}
+{\footnotesize\ttfamily \label{class_f_nav_swarms_serializer_acda26f2e7702887ac13bf5684cc6af72} 
+void FNav\+Swarms\+Serializer\+::\+Save\+To\+File (\begin{DoxyParamCaption}\item[{TArray$<$ \mbox{\hyperlink{struct_f_nav_voxel}{FNav\+Voxel}} $>$ \&}]{Nav\+Voxels}{, }\item[{const FString \&}]{Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves the FNav\+Voxels array into a binary .vox file 
+\begin{DoxyParams}{Parameters}
+{\em Nav\+Voxels} & The current grid to be saved into a file \\
+\hline
+{\em Name} & File name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_nav_swarms_serializer_8cpp_source}{Nav\+Swarms\+Serializer.\+cpp}}.
+
