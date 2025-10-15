@@ -95,6 +95,11 @@ $(function(){initNavTree('class_f_nav_swarms_debugger.html','','class_f_nav_swar
   <div class="headertitle"><div class="title">FNavSwarmsDebugger Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utility methods to debug a navigation grid.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_nav_swarms_debugger_8h_source.html">NavSwarmsDebugger.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -104,8 +109,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a622f0ee78c96b0c684f7a4f2a1cc09db" id="r_a622f0ee78c96b0c684f7a4f2a1cc09db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a622f0ee78c96b0c684f7a4f2a1cc09db">DebugPathfinding</a> (const UWorld *World, const TMap&lt; int32, <a class="el" href="struct_f_nav_task_data.html">FNavTaskData</a> &gt; &amp;Paths)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_debugger_8h_source.html#l00006">6</a> of file <a class="el" href="_nav_swarms_debugger_8h_source.html">NavSwarmsDebugger.h</a>.</p>
+<div class="textblock"><p>Utility methods to debug a navigation grid. </p>
+<p>Contains utility methods used by the FNavSwarmsManager to properly debug the navigation grid, is also capable of showing a path visualization for the current registered agents. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a73985ba328b0504bb8c0913516e1f88f" name="a73985ba328b0504bb8c0913516e1f88f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73985ba328b0504bb8c0913516e1f88f">&#9670;&#160;</a></span>DebugBounds()</h2>
@@ -138,8 +143,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_debugger_8cpp_source.html#l00078">78</a> of file <a class="el" href="_nav_swarms_debugger_8cpp_source.html">NavSwarmsDebugger.cpp</a>.</p>
+<p>Shows a yellow outline of the area the volume is going to overlap </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">World</td><td>Current level </td></tr>
+    <tr><td class="paramname">Location</td><td>World center of the grid </td></tr>
+    <tr><td class="paramname">BoundsExtend</td><td>Half size of the grid </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -179,8 +190,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_debugger_8cpp_source.html#l00039">39</a> of file <a class="el" href="_nav_swarms_debugger_8cpp_source.html">NavSwarmsDebugger.cpp</a>.</p>
+<p>Shows in red a box over all the occupied voxels </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">World</td><td>Current level </td></tr>
+    <tr><td class="paramname">CameraPosition</td><td>World location of the camera </td></tr>
+    <tr><td class="paramname">NavVoxels</td><td>Grid of voxels </td></tr>
+    <tr><td class="paramname">VoxelSize</td><td>Total size of a singular voxel </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -210,8 +228,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_debugger_8cpp_source.html#l00094">94</a> of file <a class="el" href="_nav_swarms_debugger_8cpp_source.html">NavSwarmsDebugger.cpp</a>.</p>
+<p>Shows in yellow the lines from the path with a blue sphere at each point </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">World</td><td>Current level </td></tr>
+    <tr><td class="paramname">Paths</td><td>Map of registered agents and tasks </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -251,8 +274,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_debugger_8cpp_source.html#l00006">6</a> of file <a class="el" href="_nav_swarms_debugger_8cpp_source.html">NavSwarmsDebugger.cpp</a>.</p>
+<p>Shows in green an example of the density of voxels within the given bounds, center and voxel size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">World</td><td>Current level </td></tr>
+    <tr><td class="paramname">Center</td><td>World Center of the grid </td></tr>
+    <tr><td class="paramname">VoxelCount</td><td>Total size of the grid </td></tr>
+    <tr><td class="paramname">VoxelSize</td><td>Total size of a singular voxel </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

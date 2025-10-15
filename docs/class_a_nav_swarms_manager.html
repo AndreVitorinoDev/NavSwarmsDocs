@@ -95,54 +95,72 @@ $(function(){initNavTree('class_a_nav_swarms_manager.html','','class_a_nav_swarm
   <div class="headertitle"><div class="title">ANavSwarmsManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Entry point for all navigation logic.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a85dff1dae25ca0dd4d63f963c108e4e0" id="r_a85dff1dae25ca0dd4d63f963c108e4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_nav_swarms_pathfinder.html">FNavSwarmsPathfinder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85dff1dae25ca0dd4d63f963c108e4e0">GetPathfinder</a> () const</td></tr>
 <tr class="memitem:a169dae28f4139be82ab492451c87543e" id="r_a169dae28f4139be82ab492451c87543e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a169dae28f4139be82ab492451c87543e">StartPathSearchAsync</a> (int32 OwnerID, const FVector Start, const FVector End, const bool bIsPersistent=false, float DelayBetweenSearches=0)</td></tr>
 <tr class="memitem:ac027cf119f33c69afae1fdad66ea8751" id="r_ac027cf119f33c69afae1fdad66ea8751"><td class="memItemLeft" align="right" valign="top">TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac027cf119f33c69afae1fdad66ea8751">StartPathSearch</a> (const FVector Start, const FVector End) const</td></tr>
 <tr class="memitem:ab8dd20fbba762005c919d8393f904d4c" id="r_ab8dd20fbba762005c919d8393f904d4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8dd20fbba762005c919d8393f904d4c">StopPathSearch</a> (const int32 OwnerID)</td></tr>
 <tr class="memitem:a1ed363a259c905418eadc9d26a98b57c" id="r_a1ed363a259c905418eadc9d26a98b57c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ed363a259c905418eadc9d26a98b57c">UpdatePathSearch</a> (const int32 OwnerID, const FVector NewStart, const FVector NewEnd)</td></tr>
 <tr class="memitem:a63a32835c0300777a8f11b19e19b63ad" id="r_a63a32835c0300777a8f11b19e19b63ad"><td class="memItemLeft" align="right" valign="top">TArray&lt; FVector &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63a32835c0300777a8f11b19e19b63ad">GetPathPoints</a> (const int32 OwnerID)</td></tr>
 <tr class="memitem:a8c63adcf6f3badffc1fd290ee1004d90" id="r_a8c63adcf6f3badffc1fd290ee1004d90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c63adcf6f3badffc1fd290ee1004d90">RemoveFromNavManager</a> (const int32 OwnerID, bool RemoveInternalKey=true)</td></tr>
-<tr class="memitem:a85dff1dae25ca0dd4d63f963c108e4e0" id="r_a85dff1dae25ca0dd4d63f963c108e4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_nav_swarms_pathfinder.html">FNavSwarmsPathfinder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85dff1dae25ca0dd4d63f963c108e4e0">GetPathfinder</a> () const</td></tr>
 <tr class="memitem:a062345205248cf0b5f954d288cd60e48" id="r_a062345205248cf0b5f954d288cd60e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a062345205248cf0b5f954d288cd60e48">OnPathReady</a> (const int32 OwnerID, const TArray&lt; FVector &gt; &amp;Path)</td></tr>
-<tr class="memitem:af186c108374f23ddbff51cdffb56c0f4" id="r_af186c108374f23ddbff51cdffb56c0f4"><td class="memItemLeft" align="right" valign="top">FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af186c108374f23ddbff51cdffb56c0f4">GetPathPointAtDistance</a> (const int32 OwnerID, const FVector ActorLocation, const float Distance)</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ae66fdfea5af7378b0459b9bb6d372f10" id="r_ae66fdfea5af7378b0459b9bb6d372f10"><td class="memItemLeft" align="right" valign="top">TArray&lt; TEnumAsByte&lt; ECollisionChannel &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66fdfea5af7378b0459b9bb6d372f10">ObstacleQueryChannels</a></td></tr>
-<tr class="memitem:a1a033caf834012ce1a74adb558c1a5c2" id="r_a1a033caf834012ce1a74adb558c1a5c2"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; AActor &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a033caf834012ce1a74adb558c1a5c2">ActorsToIgnoreForCollision</a></td></tr>
-<tr class="memitem:a82717b55a504bc8859aceb6ba02aecee" id="r_a82717b55a504bc8859aceb6ba02aecee"><td class="memItemLeft" align="right" valign="top">FIntVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82717b55a504bc8859aceb6ba02aecee">VoxelCount</a></td></tr>
-<tr class="memitem:a55f5a64006a90890065c6cb7d1f225d8" id="r_a55f5a64006a90890065c6cb7d1f225d8"><td class="memItemLeft" align="right" valign="top">uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55f5a64006a90890065c6cb7d1f225d8">VoxelSize</a></td></tr>
-<tr class="memitem:ab2cbc001a6a694bfc6784ff0bdac80e4" id="r_ab2cbc001a6a694bfc6784ff0bdac80e4"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; <a class="el" href="class_u_nav_swarms_data_asset.html">UNavSwarmsDataAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2cbc001a6a694bfc6784ff0bdac80e4">NavSwarmsDataAsset</a></td></tr>
-<tr class="memitem:af6979e509ed1930b456155ab48a5c933" id="r_af6979e509ed1930b456155ab48a5c933"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6979e509ed1930b456155ab48a5c933">PathResolution</a> = 2</td></tr>
-<tr class="memitem:a5326ab7562674878c96042c40e30cb63" id="r_a5326ab7562674878c96042c40e30cb63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5326ab7562674878c96042c40e30cb63">SmoothPath</a> = true</td></tr>
-<tr class="memitem:a2c874c4ec27eb8645f592825ea8723f8" id="r_a2c874c4ec27eb8645f592825ea8723f8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c874c4ec27eb8645f592825ea8723f8">SmoothAmount</a> = 1.f</td></tr>
+<tr class="memitem:a68842b906d3c9775bf440530f7a6780d" id="r_a68842b906d3c9775bf440530f7a6780d"><td class="memItemLeft" align="right" valign="top">FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68842b906d3c9775bf440530f7a6780d">GetPathPointAtDistance</a> (const int32 OwnerID, const FVector InitialLocation, const float Distance)</td></tr>
+<tr class="memitem:a7b70eb3fb71123240dbfaebc45c86c26" id="r_a7b70eb3fb71123240dbfaebc45c86c26"><td class="memItemLeft" align="right" valign="top">FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b70eb3fb71123240dbfaebc45c86c26">GetHeadingVectorAtDistance</a> (const int32 OwnerID, const FVector InitialLocation, const float Distance, const float ScaleFactor)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00012">12</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4a168338399e67b99dba2542d54a208a" name="a4a168338399e67b99dba2542d54a208a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a168338399e67b99dba2542d54a208a">&#9670;&#160;</a></span>ANavSwarmsManager()</h2>
+<div class="textblock"><p>Entry point for all navigation logic. </p>
+<p>This class is responsible for holding the information about the current grid and managing pathfinding queries, a scene that requires pathfinding has to have one with an associated FNavSwarmsDataAsset</p>
+<dl class="section remark"><dt>Remarks</dt><dd>should be possible to use more than one per scene, however, <a class="el" href="class_u_nav_swarms_function_library.html" title="Blueprint helper class.">UNavSwarmsFunctionLibrary</a> will only work for the first one it finds unless a specific <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> is given. </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a7b70eb3fb71123240dbfaebc45c86c26" name="a7b70eb3fb71123240dbfaebc45c86c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b70eb3fb71123240dbfaebc45c86c26">&#9670;&#160;</a></span>GetHeadingVectorAtDistance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ANavSwarmsManager::ANavSwarmsManager </td>
+          <td class="memname">FVector ANavSwarmsManager::GetHeadingVectorAtDistance </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const int32</td>          <td class="paramname"><span class="paramname"><em>OwnerID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const FVector</td>          <td class="paramname"><span class="paramname"><em>InitialLocation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>Distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>ScaleFactor</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00010">10</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
+<p>Finds the direction from the initial location to a point on the path at the given distance, the point is always towards the end of the path. </p><dl class="section remark"><dt>Remarks</dt><dd>Internally call <a class="el" href="#a68842b906d3c9775bf440530f7a6780d">GetPathPointAtDistance()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OwnerID</td><td>Unique ID to start, stop or get the path </td></tr>
+    <tr><td class="paramname">InitialLocation</td><td>The initial point the distance is measured </td></tr>
+    <tr><td class="paramname">Distance</td><td>Distance from the initial point should be </td></tr>
+    <tr><td class="paramname">ScaleFactor</td><td>Final scaling of the heading vector (ex: velocity) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A direction vector to the point at the distance given </dd></dl>
 
 </div>
 </div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a85dff1dae25ca0dd4d63f963c108e4e0" name="a85dff1dae25ca0dd4d63f963c108e4e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85dff1dae25ca0dd4d63f963c108e4e0">&#9670;&#160;</a></span>GetPathfinder()</h2>
 
@@ -167,12 +185,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the current in use pathfinder </p><dl class="section return"><dt>Returns</dt><dd>Current pathfinder </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00100">100</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
 </div>
 </div>
-<a id="af186c108374f23ddbff51cdffb56c0f4" name="af186c108374f23ddbff51cdffb56c0f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af186c108374f23ddbff51cdffb56c0f4">&#9670;&#160;</a></span>GetPathPointAtDistance()</h2>
+<a id="a68842b906d3c9775bf440530f7a6780d" name="a68842b906d3c9775bf440530f7a6780d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68842b906d3c9775bf440530f7a6780d">&#9670;&#160;</a></span>GetPathPointAtDistance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +201,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FVector</td>          <td class="paramname"><span class="paramname"><em>ActorLocation</em></span>, </td>
+          <td class="paramtype">const FVector</td>          <td class="paramname"><span class="paramname"><em>InitialLocation</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,8 +210,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00140">140</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
+<p>Finds a point on the path of the given ID a certain distance away, the point is always towards the end of the path. </p><dl class="section remark"><dt>Remarks</dt><dd>If the distance is bigger than the path, or what's left of it, it will return the final point </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OwnerID</td><td>Unique ID to start, stop or get the path </td></tr>
+    <tr><td class="paramname">InitialLocation</td><td>The initial point the distance is measured </td></tr>
+    <tr><td class="paramname">Distance</td><td>Distance from the initial point should be </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The location of the point the give distance away </dd></dl>
 
 </div>
 </div>
@@ -220,8 +244,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of vectors from the given start to end </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00131">131</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,8 +272,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00049">49</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,8 +302,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00119">119</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ac027cf119f33c69afae1fdad66ea8751" name="ac027cf119f33c69afae1fdad66ea8751"></a>
@@ -313,8 +331,6 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Array of path point from to end </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>If for some reason the pathfinding fails, it will return an array with the start and end positions </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00090">90</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,8 +379,6 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section remark"><dt>Remarks</dt><dd>If for some reason the pathfinding fails, it will return an array with the start and end positions </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00057">57</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab8dd20fbba762005c919d8393f904d4c" name="ab8dd20fbba762005c919d8393f904d4c"></a>
@@ -388,8 +402,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00102">102</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -425,137 +437,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8cpp_source.html#l00110">110</a> of file <a class="el" href="_nav_swarms_manager_8cpp_source.html">NavSwarmsManager.cpp</a>.</p>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a1a033caf834012ce1a74adb558c1a5c2" name="a1a033caf834012ce1a74adb558c1a5c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a033caf834012ce1a74adb558c1a5c2">&#9670;&#160;</a></span>ActorsToIgnoreForCollision</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TObjectPtr&lt;AActor&gt; &gt; ANavSwarmsManager::ActorsToIgnoreForCollision</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00022">22</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="ab2cbc001a6a694bfc6784ff0bdac80e4" name="ab2cbc001a6a694bfc6784ff0bdac80e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2cbc001a6a694bfc6784ff0bdac80e4">&#9670;&#160;</a></span>NavSwarmsDataAsset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TObjectPtr&lt;<a class="el" href="class_u_nav_swarms_data_asset.html">UNavSwarmsDataAsset</a>&gt; ANavSwarmsManager::NavSwarmsDataAsset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00028">28</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="ae66fdfea5af7378b0459b9bb6d372f10" name="ae66fdfea5af7378b0459b9bb6d372f10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66fdfea5af7378b0459b9bb6d372f10">&#9670;&#160;</a></span>ObstacleQueryChannels</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TEnumAsByte&lt;ECollisionChannel&gt; &gt; ANavSwarmsManager::ObstacleQueryChannels</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00020">20</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="af6979e509ed1930b456155ab48a5c933" name="af6979e509ed1930b456155ab48a5c933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6979e509ed1930b456155ab48a5c933">&#9670;&#160;</a></span>PathResolution</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32 ANavSwarmsManager::PathResolution = 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00031">31</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="a2c874c4ec27eb8645f592825ea8723f8" name="a2c874c4ec27eb8645f592825ea8723f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c874c4ec27eb8645f592825ea8723f8">&#9670;&#160;</a></span>SmoothAmount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ANavSwarmsManager::SmoothAmount = 1.f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00035">35</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="a5326ab7562674878c96042c40e30cb63" name="a5326ab7562674878c96042c40e30cb63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5326ab7562674878c96042c40e30cb63">&#9670;&#160;</a></span>SmoothPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ANavSwarmsManager::SmoothPath = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00033">33</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="a82717b55a504bc8859aceb6ba02aecee" name="a82717b55a504bc8859aceb6ba02aecee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82717b55a504bc8859aceb6ba02aecee">&#9670;&#160;</a></span>VoxelCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FIntVector ANavSwarmsManager::VoxelCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00024">24</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
-
-</div>
-</div>
-<a id="a55f5a64006a90890065c6cb7d1f225d8" name="a55f5a64006a90890065c6cb7d1f225d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f5a64006a90890065c6cb7d1f225d8">&#9670;&#160;</a></span>VoxelSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32 ANavSwarmsManager::VoxelSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_manager_8h_source.html#l00026">26</a> of file <a class="el" href="_nav_swarms_manager_8h_source.html">NavSwarmsManager.h</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,19 @@ var NAVTREE =
 [
   [ "NavSwarms", "index.html", [
     [ "Getting started", "index.html#autotoc_md1", null ],
-    [ "Future features", "index.html#autotoc_md2", null ],
+    [ "First steps", "index.html#autotoc_md2", null ],
+    [ "Blueprint API", "md__extra_documentation_2_blueprints_a_p_i.html", [
+      [ "Get NavManager Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md4", null ],
+      [ "Start Pathfind To Actor Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md6", null ],
+      [ "Start Pathfind To Location Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md8", null ],
+      [ "Stop Pathfinding on Actor Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md10", null ],
+      [ "Get Path For Actor Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md12", null ],
+      [ "Get Path Point at Distance Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md14", null ],
+      [ "Get Heading Vector at Distance Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md16", null ],
+      [ "Update Path Parameters Node", "md__extra_documentation_2_blueprints_a_p_i.html#autotoc_md18", null ]
+    ] ],
+    [ "c++ API", "md__extra_documentation_2_code_a_p_i.html", null ],
+    [ "Future features", "md__extra_documentation_2_future_features.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -34,7 +46,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]

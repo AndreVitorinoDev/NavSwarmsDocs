@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['smoothamount_0',['SmoothAmount',['../struct_f_path_parameters.html#aa2329b16b14d79ea4ad3e4d52a0fe337',1,'FPathParameters']]],
-  ['smoothpath_1',['SmoothPath',['../struct_f_path_parameters.html#a4da7aa964f7c26c6ea0e4754737d8751',1,'FPathParameters']]],
-  ['startposition_2',['StartPosition',['../struct_f_path_parameters.html#add5c97309c74eb885b1d32aa8ec8f66c',1,'FPathParameters']]]
+  ['onclosedlist_0',['OnClosedList',['../struct_f_path_voxel.html#ab692bf52fe36da046444c78bb51be4cf',1,'FPathVoxel']]],
+  ['ownerid_1',['OwnerID',['../struct_f_nav_task_data.html#a382f39cb8271b4b8c65eed28e8865bc7',1,'FNavTaskData']]]
 ];

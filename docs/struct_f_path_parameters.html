@@ -96,11 +96,15 @@ $(function(){initNavTree('struct_f_path_parameters.html','','struct_f_path_param
 </div><!--header-->
 <div class="contents">
 
+<p>Parameters given to the <a class="el" href="class_f_nav_swarms_pathfinder.html" title="Custom A* pathfinding implementation for Nav Swarms plugin.">FNavSwarmsPathfinder</a> to process the pathfinding.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af1cca59be1ad2031cf31b405110b5a8a" id="r_af1cca59be1ad2031cf31b405110b5a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1cca59be1ad2031cf31b405110b5a8a">FPathParameters</a> (FVector <a class="el" href="#add5c97309c74eb885b1d32aa8ec8f66c">StartPosition</a>, FVector <a class="el" href="#a6c357f9a04a193d0e4a1b0bb74ace4e5">EndPosition</a>, const int <a class="el" href="#afcd6f669a5bfbdee319d99ca08de552a">PathResolution</a>=3, const bool <a class="el" href="#a4da7aa964f7c26c6ea0e4754737d8751">SmoothPath</a>=false, const float <a class="el" href="#aa2329b16b14d79ea4ad3e4d52a0fe337">SmoothAmount</a>=0.9f)</td></tr>
+<tr class="memitem:af1cca59be1ad2031cf31b405110b5a8a" id="r_af1cca59be1ad2031cf31b405110b5a8a"><td class="memItemLeft" align="right" valign="top"><a id="af1cca59be1ad2031cf31b405110b5a8a" name="af1cca59be1ad2031cf31b405110b5a8a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FPathParameters</b> (FVector <a class="el" href="#add5c97309c74eb885b1d32aa8ec8f66c">StartPosition</a>, FVector <a class="el" href="#a6c357f9a04a193d0e4a1b0bb74ace4e5">EndPosition</a>, const int <a class="el" href="#afcd6f669a5bfbdee319d99ca08de552a">PathResolution</a>=3, const bool <a class="el" href="#a4da7aa964f7c26c6ea0e4754737d8751">SmoothPath</a>=false, const float <a class="el" href="#aa2329b16b14d79ea4ad3e4d52a0fe337">SmoothAmount</a>=0.9f)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -112,60 +116,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4da7aa964f7c26c6ea0e4754737d8751" id="r_a4da7aa964f7c26c6ea0e4754737d8751"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4da7aa964f7c26c6ea0e4754737d8751">SmoothPath</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Parameters given to the <a class="el" href="class_f_nav_swarms_pathfinder.html">FNavSwarmsPathfinder</a> to process the pathfinding, and post-process the final path array. Also stores the most up-to-date path, accessible via the <a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_pathfinder.html">FNavSwarmsPathfinder</a> </dd>
+<div class="textblock"><p>Parameters given to the <a class="el" href="class_f_nav_swarms_pathfinder.html" title="Custom A* pathfinding implementation for Nav Swarms plugin.">FNavSwarmsPathfinder</a> to process the pathfinding. </p>
+<p>It is also responsible for the post-process the final path array and storing the most up-to-date path, accessible via the <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_pathfinder.html" title="Custom A* pathfinding implementation for Nav Swarms plugin.">FNavSwarmsPathfinder</a> </dd>
 <dd>
-<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00013">13</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af1cca59be1ad2031cf31b405110b5a8a" name="af1cca59be1ad2031cf31b405110b5a8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1cca59be1ad2031cf31b405110b5a8a">&#9670;&#160;</a></span>FPathParameters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FPathParameters::FPathParameters </td>
-          <td>(</td>
-          <td class="paramtype">FVector</td>          <td class="paramname"><span class="paramname"><em>StartPosition</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FVector</td>          <td class="paramname"><span class="paramname"><em>EndPosition</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>PathResolution</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>SmoothPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>SmoothAmount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.9f</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00044">44</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> </dd></dl>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a6c357f9a04a193d0e4a1b0bb74ace4e5" name="a6c357f9a04a193d0e4a1b0bb74ace4e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c357f9a04a193d0e4a1b0bb74ace4e5">&#9670;&#160;</a></span>EndPosition</h2>
 
@@ -178,8 +134,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Where to pathfind to </p>
-
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00028">28</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
 
 </div>
 </div>
@@ -196,8 +150,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of voxels to skip when pos-processing path </p><dl class="section remark"><dt>Remarks</dt><dd>Number is inclusive, setting it to 0 will cause an error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00034">34</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
-
 </div>
 </div>
 <a id="a221fa85bb42ec9bfd8792bba1f22653c" name="a221fa85bb42ec9bfd8792bba1f22653c"></a>
@@ -211,9 +163,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Most up-to-date path found by the pathfinding </p><dl class="section remark"><dt>Remarks</dt><dd>Empty if the pathfinding didn't finish </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00019">19</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
+<p>Most up-to-date path found by the pathfinding </p><dl class="section remark"><dt>Remarks</dt><dd>Unless the thread hasn't started, it will usually return an array with the StartPosition and EndPosition </dd></dl>
 
 </div>
 </div>
@@ -230,8 +180,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Value from 0 to 1, the bigger the value, the less "zig-zaggy" the path becomes </p>
 
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00038">38</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
-
 </div>
 </div>
 <a id="a4da7aa964f7c26c6ea0e4754737d8751" name="a4da7aa964f7c26c6ea0e4754737d8751"></a>
@@ -247,8 +195,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Should the pathfinding post-process the path </p>
 
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00042">42</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
-
 </div>
 </div>
 <a id="add5c97309c74eb885b1d32aa8ec8f66c" name="add5c97309c74eb885b1d32aa8ec8f66c"></a>
@@ -263,8 +209,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Where pathfind from </p>
-
-<p class="definition">Definition at line <a class="el" href="_path_parameters_8h_source.html#l00024">24</a> of file <a class="el" href="_path_parameters_8h_source.html">PathParameters.h</a>.</p>
 
 </div>
 </div>

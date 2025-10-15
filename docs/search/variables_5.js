@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parentindex_0',['ParentIndex',['../struct_f_path_voxel.html#a385acdcdf2026e5333604e3ed486be7f',1,'FPathVoxel']]],
-  ['pathresolution_1',['PathResolution',['../struct_f_path_parameters.html#afcd6f669a5bfbdee319d99ca08de552a',1,'FPathParameters']]],
-  ['pathvoxels_2',['PathVoxels',['../struct_f_path_parameters.html#a221fa85bb42ec9bfd8792bba1f22653c',1,'FPathParameters']]]
+  ['name_0',['Name',['../class_u_nav_swarms_data_asset.html#a2978bb048fcf5778056edf124163a3ff',1,'UNavSwarmsDataAsset']]],
+  ['neighbours_1',['Neighbours',['../struct_f_nav_voxel.html#ad014213dd1d2665b1f05cf8ccbf9e3e9',1,'FNavVoxel']]]
 ];

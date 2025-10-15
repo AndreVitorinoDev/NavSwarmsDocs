@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getting_20started_0',['Getting started',['../index.html#autotoc_md1',1,'']]]
+  ['blueprint_20api_0',['Blueprint API',['../md__extra_documentation_2_blueprints_a_p_i.html',1,'']]]
 ];

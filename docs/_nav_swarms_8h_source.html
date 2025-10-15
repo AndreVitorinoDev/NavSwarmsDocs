@@ -102,24 +102,27 @@ $(function(){initNavTree('_nav_swarms_8h_source.html','',''); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Modules/ModuleManager.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_f_nav_swarms_module.html">    8</a></span><span class="keyword">class </span>NAVSWARMS_API <a class="code hl_class" href="class_f_nav_swarms_module.html">FNavSwarmsModule</a> : <span class="keyword">public</span> IModuleInterface</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_nav_swarms_module.html#ac947c1d739958f9e6c825990a29b4fd3">StartupModule</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ShutdownModule() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>DECLARE_LOG_CATEGORY_EXTERN(NavSwarms_Log, Log, All);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_f_nav_swarms_module.html">   15</a></span><span class="keyword">class </span>NAVSWARMS_API <a class="code hl_class" href="class_f_nav_swarms_module.html">FNavSwarmsModule</a> : <span class="keyword">public</span> IModuleInterface</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_nav_swarms_module.html#ac947c1d739958f9e6c825990a29b4fd3">StartupModule</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_nav_swarms_module.html#a7998558944c554bf3d988e2690c5354d">ShutdownModule</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
-<div class="ttc" id="aclass_f_nav_swarms_module_html"><div class="ttname"><a href="class_f_nav_swarms_module.html">FNavSwarmsModule</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">NavSwarms.h:9</a></div></div>
-<div class="ttc" id="aclass_f_nav_swarms_module_html_ac947c1d739958f9e6c825990a29b4fd3"><div class="ttname"><a href="class_f_nav_swarms_module.html#ac947c1d739958f9e6c825990a29b4fd3">FNavSwarmsModule::StartupModule</a></div><div class="ttdeci">virtual void StartupModule() override</div><div class="ttdef"><b>Definition</b> <a href="_nav_swarms_8cpp_source.html#l00007">NavSwarms.cpp:7</a></div></div>
+<div class="ttc" id="aclass_f_nav_swarms_module_html"><div class="ttname"><a href="class_f_nav_swarms_module.html">FNavSwarmsModule</a></div><div class="ttdoc">Plugin module.</div><div class="ttdef"><b>Definition</b> NavSwarms.h:16</div></div>
+<div class="ttc" id="aclass_f_nav_swarms_module_html_a7998558944c554bf3d988e2690c5354d"><div class="ttname"><a href="class_f_nav_swarms_module.html#a7998558944c554bf3d988e2690c5354d">FNavSwarmsModule::ShutdownModule</a></div><div class="ttdeci">virtual void ShutdownModule() override</div><div class="ttdef"><b>Definition</b> NavSwarms.cpp:13</div></div>
+<div class="ttc" id="aclass_f_nav_swarms_module_html_ac947c1d739958f9e6c825990a29b4fd3"><div class="ttname"><a href="class_f_nav_swarms_module.html#ac947c1d739958f9e6c825990a29b4fd3">FNavSwarmsModule::StartupModule</a></div><div class="ttdeci">virtual void StartupModule() override</div><div class="ttdef"><b>Definition</b> NavSwarms.cpp:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a href="dir_6fd832a3d65363e09d8d597d0448c00b.html">Unreal Projects</a></li><li class="navelem"><a href="dir_a58a9178fb95625cf240b9e697e88462.html">AndreAINavigation</a></li><li class="navelem"><a href="dir_89e362368e8fbad4e9fe82dd43eabba4.html">Plugins</a></li><li class="navelem"><a href="dir_17738b3cc19b2af0805929e23adff066.html">NavSwarms</a></li><li class="navelem"><a href="dir_801f686593f6e841b0eab0cf3b8060d4.html">Source</a></li><li class="navelem"><a href="dir_c78b04d2fd7330ed0fe724c906f9aa2e.html">NavSwarms</a></li><li class="navelem"><a href="dir_048aa3354c194a1338cdc0a7df357459.html">Public</a></li><li class="navelem"><b>NavSwarms.h</b></li>
+    <li class="navelem"><a href="dir_986c069212d6ee060a92dfe51a55056d.html">Unreal Projects</a></li><li class="navelem"><a href="dir_a9e2c39909f3ffb968502ffa32d7f99d.html">AndreAINavigation</a></li><li class="navelem"><a href="dir_a6a9d8514975a3749895f6c0882c3b67.html">Plugins</a></li><li class="navelem"><a href="dir_7236104f8373494318780f6d523061a3.html">NavSwarms</a></li><li class="navelem"><a href="dir_e06f1b33772b66e20699c785c89b32b5.html">Source</a></li><li class="navelem"><a href="dir_693639bef613d98eede1fe34988377ac.html">NavSwarms</a></li><li class="navelem"><a href="dir_3b50070ce3043816b0587c9c47c8dda1.html">Public</a></li><li class="navelem"><b>NavSwarms.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

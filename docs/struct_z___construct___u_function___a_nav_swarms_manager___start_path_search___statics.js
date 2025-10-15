@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___a_nav_swarms_manager___start_path_search___statics =
-[
-    [ "NavSwarmsManager_eventStartPathSearch_Parms", "struct_z___construct___u_function___a_nav_swarms_manager___start_path_search___statics_1_1_nav_s61c8a188825c5ac8783a675ad42e094d.html", null ]
-];

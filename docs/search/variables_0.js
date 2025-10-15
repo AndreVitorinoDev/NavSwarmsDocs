@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['endposition_0',['EndPosition',['../struct_f_path_parameters.html#a6c357f9a04a193d0e4a1b0bb74ace4e5',1,'FPathParameters']]]
+  ['bisobstacle_0',['bIsObstacle',['../struct_f_nav_voxel.html#a8537ba65de9935ebbed29ce6bcacf4c9',1,'FNavVoxel']]]
 ];

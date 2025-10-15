@@ -96,6 +96,9 @@ $(function(){initNavTree('class_f_nav_swarms_runnable.html','','class_f_nav_swar
 </div><!--header-->
 <div class="contents">
 
+<p>Thread class for processing pathfinding queries.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_nav_swarms_runnable_8h_source.html">NavSwarmsRunnable.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -109,16 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6b416cca2d3055500b4dd8b0d46d043" id="r_ab6b416cca2d3055500b4dd8b0d46d043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6b416cca2d3055500b4dd8b0d46d043">UpdateParameters</a> (const <a class="el" href="struct_f_path_parameters.html">FPathParameters</a> &amp;NewPathParameters)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Threaded processing of the pathfinding, it has 2 modes:</p><ul>
+<div class="textblock"><p>Thread class for processing pathfinding queries. </p>
+<p>It has 2 modes:</p><ul>
 <li>Persistent: by setting persistent to true the pathfinding will continuously run until stopped.</li>
 <li>NonPersistent: by setting persistent to false, the pathfinding will only run once.</li>
 </ul>
-<dl class="section remark"><dt>Remarks</dt><dd>Independent of mode of operation, when a path is found it will update the given <a class="el" href="struct_f_path_parameters.html">FPathParameters</a> path </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_f_path_parameters.html">FPathParameters</a> </dd>
+<dl class="section remark"><dt>Remarks</dt><dd>Independent of mode of operation, when a path is found it will update the given <a class="el" href="struct_f_path_parameters.html" title="Parameters given to the FNavSwarmsPathfinder to process the pathfinding.">FPathParameters</a> path </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_f_path_parameters.html" title="Parameters given to the FNavSwarmsPathfinder to process the pathfinding.">FPathParameters</a> </dd>
 <dd>
-<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8h_source.html#l00017">17</a> of file <a class="el" href="_nav_swarms_runnable_8h_source.html">NavSwarmsRunnable.h</a>.</p>
+<a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af9fa240b5e8fc084f66a464c82e9d214" name="af9fa240b5e8fc084f66a464c82e9d214"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9fa240b5e8fc084f66a464c82e9d214">&#9670;&#160;</a></span>FNavSwarmsRunnable()</h2>
@@ -164,35 +166,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00007">7</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a92216de1239337204fddd4eaaed38767" name="a92216de1239337204fddd4eaaed38767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92216de1239337204fddd4eaaed38767">&#9670;&#160;</a></span>~FNavSwarmsRunnable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FNavSwarmsRunnable::~FNavSwarmsRunnable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00021">21</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
-
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -220,8 +193,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>(called by the thread runner) </p><dl class="section return"><dt>Returns</dt><dd>Status boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00031">31</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aabb5c126fc84dc5cd2a223496d51a43f" name="aabb5c126fc84dc5cd2a223496d51a43f"></a>
@@ -248,8 +219,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Checks if the thread has finished. </p><dl class="section return"><dt>Returns</dt><dd>true if the thread finished, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8h_source.html#l00057">57</a> of file <a class="el" href="_nav_swarms_runnable_8h_source.html">NavSwarmsRunnable.h</a>.</p>
-
 </div>
 </div>
 <a id="aa383dba96a2b6cc85a80f3bd259c1c36" name="aa383dba96a2b6cc85a80f3bd259c1c36"></a>
@@ -267,8 +236,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Stops the process and destroys this instance </p>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00056">56</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,8 +263,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>(called by the thread runner) </p><dl class="section return"><dt>Returns</dt><dd>Status integer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00036">36</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab24e631d024f191c2fd1e652cf1f4c55" name="ab24e631d024f191c2fd1e652cf1f4c55"></a>
@@ -324,8 +289,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Interrupts the current running process </p>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00051">51</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab6b416cca2d3055500b4dd8b0d46d043" name="ab6b416cca2d3055500b4dd8b0d46d043"></a>
@@ -349,8 +312,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_runnable_8cpp_source.html#l00062">62</a> of file <a class="el" href="_nav_swarms_runnable_8cpp_source.html">NavSwarmsRunnable.cpp</a>.</p>
 
 </div>
 </div>

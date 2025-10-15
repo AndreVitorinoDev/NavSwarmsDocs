@@ -96,6 +96,9 @@ $(function(){initNavTree('class_f_nav_swarms_pathfinder.html','','class_f_nav_sw
 </div><!--header-->
 <div class="contents">
 
+<p>Custom A* pathfinding implementation for Nav Swarms plugin.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_nav_swarms_pathfinder_8h_source.html">NavSwarmsPathfinder.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -104,10 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92b94ece0330a98ff5447bbd86b378bd" id="r_a92b94ece0330a98ff5447bbd86b378bd"><td class="memItemLeft" align="right" valign="top">TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92b94ece0330a98ff5447bbd86b378bd">FindPath</a> (<a class="el" href="struct_f_path_parameters.html">FPathParameters</a> &amp;PathParameters, const bool &amp;StopTask)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Custom A* pathfinding implementation for Nav Swarms plugin, most often used by to find paths on a separate thread</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_pathfinder_8h_source.html#l00012">12</a> of file <a class="el" href="_nav_swarms_pathfinder_8h_source.html">NavSwarmsPathfinder.h</a>.</p>
+<div class="textblock"><p>Custom A* pathfinding implementation for Nav Swarms plugin. </p>
+<p>Often used by to find paths on a separate thread.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_runnable.html" title="Thread class for processing pathfinding queries.">FNavSwarmsRunnable</a> </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4cc437952c166072b91524f176de8a16" name="a4cc437952c166072b91524f176de8a16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cc437952c166072b91524f176de8a16">&#9670;&#160;</a></span>FNavSwarmsPathfinder()</h2>
@@ -141,8 +143,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_pathfinder_8cpp_source.html#l00006">6</a> of file <a class="el" href="_nav_swarms_pathfinder_8cpp_source.html">NavSwarmsPathfinder.cpp</a>.</p>
-
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -172,8 +172,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Array of location already post-processed </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_pathfinder_8cpp_source.html#l00013">13</a> of file <a class="el" href="_nav_swarms_pathfinder_8cpp_source.html">NavSwarmsPathfinder.cpp</a>.</p>
 
 </div>
 </div>

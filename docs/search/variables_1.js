@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['g_5fcost_0',['G_Cost',['../struct_f_path_voxel.html#a117b2c6b7a6db87a42fbe40da39586fb',1,'FPathVoxel']]]
+  ['endposition_0',['EndPosition',['../struct_f_path_parameters.html#a6c357f9a04a193d0e4a1b0bb74ace4e5',1,'FPathParameters']]]
 ];

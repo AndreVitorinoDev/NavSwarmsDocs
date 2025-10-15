@@ -96,6 +96,9 @@ $(function(){initNavTree('class_u_nav_swarms_data_asset.html','','class_u_nav_sw
 </div><!--header-->
 <div class="contents">
 
+<p>Stores information about a navigation grid.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_nav_swarms_data_asset_8h_source.html">NavSwarmsDataAsset.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,10 +111,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2978bb048fcf5778056edf124163a3ff" id="r_a2978bb048fcf5778056edf124163a3ff"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2978bb048fcf5778056edf124163a3ff">Name</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Responsible for creating and saving the current navigation grid, keeping important information about the grid. Since the grid is stored on a binary file (.vox) located in the root "content" folder, it keeps track of what file is associated with it, if the UDataAsset is deleted or modified, the ".vox" file will also be deleted/modified Also contains some useful methods to convert from world locations to linear array indexes and vice versa</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_serializer.html">FNavSwarmsSerializer</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_data_asset_8h_source.html#l00015">15</a> of file <a class="el" href="_nav_swarms_data_asset_8h_source.html">NavSwarmsDataAsset.h</a>.</p>
+<div class="textblock"><p>Stores information about a navigation grid. </p>
+<p>Responsible for creating and saving the current navigation grid, keeping important information about the grid. Since the grid is stored on a binary file (.vox) located in the root "content" folder, it keeps track of what file is associated with it, if the UDataAsset is deleted or modified, the ".vox" file will also be deleted/modified Also contains some useful methods to convert from world locations to linear array indexes and vice versa</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_f_nav_swarms_serializer.html" title="Saves the grid data into a .vox file.">FNavSwarmsSerializer</a> </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a11e883e2b16f963e4a23a26dc44dd388" name="a11e883e2b16f963e4a23a26dc44dd388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11e883e2b16f963e4a23a26dc44dd388">&#9670;&#160;</a></span>GetIndexFromLocalVector()</h2>
@@ -134,8 +136,6 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Index of the closest voxel to that position </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_data_asset_8cpp_source.html#l00132">132</a> of file <a class="el" href="_nav_swarms_data_asset_8cpp_source.html">NavSwarmsDataAsset.cpp</a>.</p>
 
 </div>
 </div>
@@ -162,8 +162,6 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Index of the closest voxel to that position </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_data_asset_8cpp_source.html#l00137">137</a> of file <a class="el" href="_nav_swarms_data_asset_8cpp_source.html">NavSwarmsDataAsset.cpp</a>.</p>
-
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
@@ -179,8 +177,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Name of the file when baked </p>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_data_asset_8h_source.html#l00024">24</a> of file <a class="el" href="_nav_swarms_data_asset_8h_source.html">NavSwarmsDataAsset.h</a>.</p>
 
 </div>
 </div>

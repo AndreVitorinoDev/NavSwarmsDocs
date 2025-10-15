@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___u_nav_swarms_function_library___get_path_point_at_distance___statics =
-[
-    [ "NavSwarmsFunctionLibrary_eventGetPathPointAtDistance_Parms", "struct_z___construct___u_function___u_nav_swarms_function_library___get_path_point_at_distance__f8563b7a93a81fe4c1b40e96b0d5f2ab.html", null ]
-];

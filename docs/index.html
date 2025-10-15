@@ -97,7 +97,7 @@ $(function(){initNavTree('index.html','',''); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2andre_2_documents_2_unreal_01_projects_2_andre_a_i_navigation_2_plugins_2_nav_swarms_2_r_e_a_d_m_e"></a></p>
 <p>NavSwarms is a Unreal plugin to provide 3D pathfinding for Unreal Engine 5. Primarily designed for baking large voxel grids, and using the provided ANavSwarmsManager to queue pathfinding queries using an optimized custom A* algorithm.</p>
-<p>This plugin is focused on providing an easy and efficient way to manage flying AI which needs a system that is not covered by the Unreal native AI navigation system.</p>
+<p>This plugin is focused on providing an easy and efficient way to manage aerial AI which needs a system that is not covered by the Unreal native AI navigation system.</p>
 <p>Key features:</p><ul>
 <li>Navigation Manager Actor for configuring the map navigation grid</li>
 <li>API to manage pathfinding queries and retrieve finished paths</li>
@@ -107,15 +107,23 @@ $(function(){initNavTree('index.html','',''); });
 </ul>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 Getting started</h1>
-<p>Simply drag the contents to the <span class="tt">Plugins</span> folder on your Unreal project, if there's no <span class="tt">Plugins</span> folder you can create a new folder with that exact name. Make sure that Visual Studio 2022 is also installed with the <span class="tt">game development with C++</span> modules.</p>
+<p>Create a new folder entitled <span class="tt">NavSwarms</span> inside the <span class="tt">Plugins</span> folder on your Unreal project, if there's no <span class="tt">Plugins</span> folder you can create a new folder with that exact name.</p>
+<p>Then either extract the contents to the <span class="tt">NavSwarms</span> folder if you downloaded the <span class="tt">.zip</span> file, or clone the project to that folder.</p>
+<p>Make sure that Visual Studio 2022 is also installed with the <span class="tt">game development with C++</span> modules.</p>
 <p>Locate the <span class="tt">.uproject</span> of your project, right click and select <span class="tt">Generate Visual Studio Project</span></p>
-<p>Finally go to Edid -&gt; Plugins and make sure that the plugin is enabled, if it's already enabled don't worry, you can just skip this step.</p>
+<p>Finally go to Edit-&gt;Plugins and make sure that the plugin is enabled, if it is already enabled don't worry, you can just skip this step.</p>
+<p>Documentation is always available for the latest release version <a href="https://andrevitorinodev.github.io/NavSwarmsDocs/">here</a>.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
-Future features</h1>
+First steps</h1>
 <ul>
-<li>Placeable volume Actor or component to dynamically change movable objects</li>
-<li>Infinite world support</li>
-<li>Custom AI nodes </li>
+<li>On the top right click the cube with the '+' green sign.</li>
+<li>Go to 'All Classes' and search for 'Nav Swarms Manager'</li>
+<li>Select the newly created object</li>
+<li>For starting off, toggle 'Debug Bounds' and 'Debug occupied'</li>
+<li>Choose the size of the grid by tweaking the 'Voxel Count' and 'Voxel Size', the actual size will be visualized with a yellow box</li>
+<li>Anywhere on your content folder create a new Data Asset by right clicking-&gt;Miscellaneous-&gt;Data Asset and searching for 'Nav Swarms Data Asset'</li>
+<li>You can open the newly created asset and choosing a name for the .vox file that will be generated, which you can afterwards assign to the 'Nav Swarms Data Asset' on the object you've previously created</li>
+<li>Finally you can hit 'Bake Nav Data' to generate your grid, if something went wrong the console will point you to the problem </li>
 </ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

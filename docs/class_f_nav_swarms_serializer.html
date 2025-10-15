@@ -96,20 +96,22 @@ $(function(){initNavTree('class_f_nav_swarms_serializer.html','','class_f_nav_sw
 </div><!--header-->
 <div class="contents">
 
+<p>Saves the grid data into a .vox file.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_nav_swarms_serializer_8h_source.html">NavSwarmsSerializer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acda26f2e7702887ac13bf5684cc6af72" id="r_acda26f2e7702887ac13bf5684cc6af72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acda26f2e7702887ac13bf5684cc6af72">SaveToFile</a> (TArray&lt; <a class="el" href="struct_f_nav_voxel.html">FNavVoxel</a> &gt; &amp;NavVoxels, const FString &amp;Name)</td></tr>
 <tr class="memitem:a39e9bf7bfcfa5ee755583196243dc26a" id="r_a39e9bf7bfcfa5ee755583196243dc26a"><td class="memItemLeft" align="right" valign="top">static TArray&lt; <a class="el" href="struct_f_nav_voxel.html">FNavVoxel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39e9bf7bfcfa5ee755583196243dc26a">LoadFromFile</a> (const FString &amp;Name)</td></tr>
-<tr class="memitem:a1945476eccf3e26ebacdd38c731f8226" id="r_a1945476eccf3e26ebacdd38c731f8226"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1945476eccf3e26ebacdd38c731f8226">RenameFile</a> (const FString &amp;Path, const FString &amp;NewName)</td></tr>
+<tr class="memitem:aa4e2f7b6f2e1dc991047ab47a0823687" id="r_aa4e2f7b6f2e1dc991047ab47a0823687"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4e2f7b6f2e1dc991047ab47a0823687">RenameFile</a> (const FString &amp;Path, const FString &amp;NewName)</td></tr>
 <tr class="memitem:a4e9c3d4abea0410a093aed774235dd61" id="r_a4e9c3d4abea0410a093aed774235dd61"><td class="memItemLeft" align="right" valign="top">static FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9c3d4abea0410a093aed774235dd61">GetFilePath</a> (const FString &amp;Name)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Saves the FNavVoxels grid array into a .vox binary file with the given name so it can be later read, the file is always stored in the "/Content" folder, and it's path is given to the <a class="el" href="class_u_nav_swarms_data_asset.html">UNavSwarmsDataAsset</a>, if it is deleted or modified the created file will also be deleted or modified.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_u_nav_swarms_data_asset.html">UNavSwarmsDataAsset</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_serializer_8h_source.html#l00011">11</a> of file <a class="el" href="_nav_swarms_serializer_8h_source.html">NavSwarmsSerializer.h</a>.</p>
+<div class="textblock"><p>Saves the grid data into a .vox file. </p>
+<p>Saves the FNavVoxels grid array into a .vox binary file with the given name so it can be later read, the file is always stored in the "/Content" folder, and it's path is given to the <a class="el" href="class_u_nav_swarms_data_asset.html" title="Stores information about a navigation grid.">UNavSwarmsDataAsset</a>, if it is deleted or modified the created file will also be deleted or modified.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_u_nav_swarms_data_asset.html" title="Stores information about a navigation grid.">UNavSwarmsDataAsset</a> </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a4e9c3d4abea0410a093aed774235dd61" name="a4e9c3d4abea0410a093aed774235dd61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e9c3d4abea0410a093aed774235dd61">&#9670;&#160;</a></span>GetFilePath()</h2>
@@ -140,8 +142,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A path string to a file with that name </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_serializer_8h_source.html#l00037">37</a> of file <a class="el" href="_nav_swarms_serializer_8h_source.html">NavSwarmsSerializer.h</a>.</p>
 
 </div>
 </div>
@@ -175,12 +175,10 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A copy of the array loaded </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_serializer_8cpp_source.html#l00021">21</a> of file <a class="el" href="_nav_swarms_serializer_8cpp_source.html">NavSwarmsSerializer.cpp</a>.</p>
-
 </div>
 </div>
-<a id="a1945476eccf3e26ebacdd38c731f8226" name="a1945476eccf3e26ebacdd38c731f8226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1945476eccf3e26ebacdd38c731f8226">&#9670;&#160;</a></span>RenameFile()</h2>
+<a id="aa4e2f7b6f2e1dc991047ab47a0823687" name="aa4e2f7b6f2e1dc991047ab47a0823687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e2f7b6f2e1dc991047ab47a0823687">&#9670;&#160;</a></span>RenameFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FNavSwarmsSerializer::RenameFile </td>
+          <td class="memname">bool FNavSwarmsSerializer::RenameFile </td>
           <td>(</td>
           <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>Path</em></span>, </td>
         </tr>
@@ -205,15 +203,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Renames the file at the current path to the given name, if the file doesn't exist nothing happens </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Renames the file at the current path to the given name, if the file doesn't exist, nothing happens </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Path</td><td>Current path to the file </td></tr>
     <tr><td class="paramname">NewName</td><td>New name for the file </td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_serializer_8cpp_source.html#l00040">40</a> of file <a class="el" href="_nav_swarms_serializer_8cpp_source.html">NavSwarmsSerializer.cpp</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the rename was successful, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -250,8 +247,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_serializer_8cpp_source.html#l00006">6</a> of file <a class="el" href="_nav_swarms_serializer_8cpp_source.html">NavSwarmsSerializer.cpp</a>.</p>
 
 </div>
 </div>

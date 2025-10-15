@@ -95,6 +95,11 @@ $(function(){initNavTree('class_u_nav_swarms_function_library.html','','class_u_
   <div class="headertitle"><div class="title">UNavSwarmsFunctionLibrary Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Blueprint helper class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_nav_swarms_function_library_8h_source.html">NavSwarmsFunctionLibrary.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -104,18 +109,103 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ab1fbe1015ee711a285fe32ee602f2f" id="r_a6ab1fbe1015ee711a285fe32ee602f2f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab1fbe1015ee711a285fe32ee602f2f">StopPathfindOnActorWithSpecificManager</a> (<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *Manager, AActor *OwningActor)</td></tr>
 <tr class="memitem:af6bd5e01fcfa00978d32a5984a0f134f" id="r_af6bd5e01fcfa00978d32a5984a0f134f"><td class="memItemLeft" align="right" valign="top">static TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6bd5e01fcfa00978d32a5984a0f134f">GetPathForActorWithSpecificManager</a> (<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *Manager, AActor *OwningActor)</td></tr>
 <tr class="memitem:a5588e2175a94355ab343c902760c3d13" id="r_a5588e2175a94355ab343c902760c3d13"><td class="memItemLeft" align="right" valign="top">static FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5588e2175a94355ab343c902760c3d13">GetPathPointAtDistanceWithSpecificManager</a> (<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *Manager, AActor *OwningActor, const float Distance)</td></tr>
+<tr class="memitem:a1d89ab6908cd92faf39c66e83858c67e" id="r_a1d89ab6908cd92faf39c66e83858c67e"><td class="memItemLeft" align="right" valign="top">static FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d89ab6908cd92faf39c66e83858c67e">GetHeadingVectorAtDistanceWithSpecificManager</a> (<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *Manager, AActor *OwningActor, const float Distance, const float ScaleFactor)</td></tr>
 <tr class="memitem:ab9de3d63b745e1c9b49dd3d094369dd6" id="r_ab9de3d63b745e1c9b49dd3d094369dd6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9de3d63b745e1c9b49dd3d094369dd6">UpdatePathParametersWithSpecificManager</a> (<a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *Manager, AActor *OwningActor, const AActor *Target)</td></tr>
 <tr class="memitem:a202cc9163bde2761906f21ad96d1c22a" id="r_a202cc9163bde2761906f21ad96d1c22a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a202cc9163bde2761906f21ad96d1c22a">StartPathfindToActor</a> (AActor *OwningActor, const AActor *Target, bool Persistent, float DelayBetweenSearches)</td></tr>
 <tr class="memitem:a11906a22c00295c6689df567afe48203" id="r_a11906a22c00295c6689df567afe48203"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11906a22c00295c6689df567afe48203">StartPathfindToLocation</a> (AActor *OwningActor, const FVector &amp;Target)</td></tr>
 <tr class="memitem:a85e03a8c47de67ffc4ac62dceedd7142" id="r_a85e03a8c47de67ffc4ac62dceedd7142"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e03a8c47de67ffc4ac62dceedd7142">StopPathfindOnActor</a> (AActor *OwningActor)</td></tr>
 <tr class="memitem:ab33f5bfe9ffe77d1d18e00a5c585e299" id="r_ab33f5bfe9ffe77d1d18e00a5c585e299"><td class="memItemLeft" align="right" valign="top">static TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33f5bfe9ffe77d1d18e00a5c585e299">GetPathForActor</a> (AActor *OwningActor)</td></tr>
 <tr class="memitem:ac59d4e97daea53ae03314f6eca5a9870" id="r_ac59d4e97daea53ae03314f6eca5a9870"><td class="memItemLeft" align="right" valign="top">static FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59d4e97daea53ae03314f6eca5a9870">GetPathPointAtDistance</a> (AActor *OwningActor, const float Distance)</td></tr>
+<tr class="memitem:ab909e55768200c76ce16f2e8eea0975a" id="r_ab909e55768200c76ce16f2e8eea0975a"><td class="memItemLeft" align="right" valign="top">static FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab909e55768200c76ce16f2e8eea0975a">GetHeadingVectorAtDistance</a> (AActor *OwningActor, const float Distance, const float ScaleFactor)</td></tr>
 <tr class="memitem:a4cc61222da6c03059d833c286b88c252" id="r_a4cc61222da6c03059d833c286b88c252"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cc61222da6c03059d833c286b88c252">UpdatePathParameters</a> (AActor *OwningActor, const AActor *Target)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8h_source.html#l00007">7</a> of file <a class="el" href="_nav_swarms_function_library_8h_source.html">NavSwarmsFunctionLibrary.h</a>.</p>
+<div class="textblock"><p>Blueprint helper class. </p>
+<p>Directly communicates with a <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> in order to manage the pathfinding queries or to get points/ directions on a path, it can also be used directly via code. </p><dl class="section remark"><dt>Remarks</dt><dd>If there's more than one <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> it chooses the first one it finds, unless a specific one is passed down. The ID for a query using this class will be the Actor's GetUniqueID(). </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab909e55768200c76ce16f2e8eea0975a" name="ab909e55768200c76ce16f2e8eea0975a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab909e55768200c76ce16f2e8eea0975a">&#9670;&#160;</a></span>GetHeadingVectorAtDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FVector UNavSwarmsFunctionLibrary::GetHeadingVectorAtDistance </td>
+          <td>(</td>
+          <td class="paramtype">AActor *</td>          <td class="paramname"><span class="paramname"><em>OwningActor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>Distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>ScaleFactor</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internally calls <a class="el" href="#a1d89ab6908cd92faf39c66e83858c67e">GetHeadingVectorAtDistanceWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1d89ab6908cd92faf39c66e83858c67e">GetHeadingVectorAtDistanceWithSpecificManager()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1d89ab6908cd92faf39c66e83858c67e" name="a1d89ab6908cd92faf39c66e83858c67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d89ab6908cd92faf39c66e83858c67e">&#9670;&#160;</a></span>GetHeadingVectorAtDistanceWithSpecificManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FVector UNavSwarmsFunctionLibrary::GetHeadingVectorAtDistanceWithSpecificManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_nav_swarms_manager.html">ANavSwarmsManager</a> *</td>          <td class="paramname"><span class="paramname"><em>Manager</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AActor *</td>          <td class="paramname"><span class="paramname"><em>OwningActor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>Distance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>ScaleFactor</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a direction to a point on the path some distance away from the owning actor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+    <tr><td class="paramname">Distance</td><td>Distance on the path from the actor </td></tr>
+    <tr><td class="paramname">ScaleFactor</td><td>Final scaling factor to the direction vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2ac6b5d65a9c9556e85fed9735584e37" name="a2ac6b5d65a9c9556e85fed9735584e37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ac6b5d65a9c9556e85fed9735584e37">&#9670;&#160;</a></span>GetNavManager()</h2>
 
@@ -138,8 +228,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00005">5</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Finds the first <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> in the current level </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WorldContextObject</td><td>Context object for the current level </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The first <a class="el" href="class_a_nav_swarms_manager.html" title="Entry point for all navigation logic.">ANavSwarmsManager</a> found </dd></dl>
 
 </div>
 </div>
@@ -165,8 +260,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00079">79</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#af6bd5e01fcfa00978d32a5984a0f134f">GetPathForActorWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6bd5e01fcfa00978d32a5984a0f134f">GetPathForActorWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -196,8 +290,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00040">40</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Returns an array of locations from the start to the end of the query with the same ID of the owning actor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -227,8 +326,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00084">84</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#a5588e2175a94355ab343c902760c3d13">GetPathPointAtDistanceWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a5588e2175a94355ab343c902760c3d13">GetPathPointAtDistanceWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -263,8 +361,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00047">47</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Returns a location on the path some distance away from the owning actor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+    <tr><td class="paramname">Distance</td><td>Distance on the path from the actor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -304,8 +408,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00062">62</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#aa6d619aa45db1c77f0514771920cfd88">StartPathfindToActorWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa6d619aa45db1c77f0514771920cfd88">StartPathfindToActorWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -350,8 +453,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00018">18</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Starts a pathfind query from the position of the owning actor to the target actor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+    <tr><td class="paramname">Target</td><td>The target actor </td></tr>
+    <tr><td class="paramname">Persistent</td><td>If the thread should run continuously </td></tr>
+    <tr><td class="paramname">DelayBetweenSearches</td><td>Time between pathfind searches </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -381,8 +492,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00069">69</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#a1ee067f7ed2e4ff3112b7d7444db0c4e">StartPathfindToLocationWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1ee067f7ed2e4ff3112b7d7444db0c4e">StartPathfindToLocationWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -417,8 +527,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00027">27</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Starts a pathfind query from the position of the owning actor to the target location </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+    <tr><td class="paramname">Target</td><td>The target location </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -444,8 +560,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00074">74</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#a6ab1fbe1015ee711a285fe32ee602f2f">StopPathfindOnActorWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a6ab1fbe1015ee711a285fe32ee602f2f">StopPathfindOnActorWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -475,8 +590,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00034">34</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Stops a pathfind query with the uniqueID of the owning actor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -506,8 +626,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00089">89</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Internally calls <a class="el" href="#ab9de3d63b745e1c9b49dd3d094369dd6">UpdatePathParametersWithSpecificManager()</a> with the first manager it finds. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab9de3d63b745e1c9b49dd3d094369dd6">UpdatePathParametersWithSpecificManager()</a> </dd></dl>
 
 </div>
 </div>
@@ -542,8 +661,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_swarms_function_library_8cpp_source.html#l00054">54</a> of file <a class="el" href="_nav_swarms_function_library_8cpp_source.html">NavSwarmsFunctionLibrary.cpp</a>.</p>
+<p>Updates the start and end locations of a specific query </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Manager</td><td>Manager to add/modify the query </td></tr>
+    <tr><td class="paramname">OwningActor</td><td>The actor that should own the query </td></tr>
+    <tr><td class="paramname">Target</td><td>The target actor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -95,11 +95,18 @@ $(function(){initNavTree('struct_f_nav_task_data.html','','struct_f_nav_task_dat
   <div class="headertitle"><div class="title">FNavTaskData Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores the thread and the path of a singular ID.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1c038e6e5301a527635a3d4488253ca" id="r_ac1c038e6e5301a527635a3d4488253ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1c038e6e5301a527635a3d4488253ca">FNavTaskData</a> (const int32 OwnerID, <a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *Runnable, const TArray&lt; FVector &gt; &amp;PathPoints)</td></tr>
-<tr class="memitem:a8755fabf39206bac79d82809fe0e0532" id="r_a8755fabf39206bac79d82809fe0e0532"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8755fabf39206bac79d82809fe0e0532">FNavTaskData</a> (const int32 OwnerID, <a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *Runnable)</td></tr>
+<tr class="memitem:ac1c038e6e5301a527635a3d4488253ca" id="r_ac1c038e6e5301a527635a3d4488253ca"><td class="memItemLeft" align="right" valign="top"><a id="ac1c038e6e5301a527635a3d4488253ca" name="ac1c038e6e5301a527635a3d4488253ca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FNavTaskData</b> (const int32 <a class="el" href="#a382f39cb8271b4b8c65eed28e8865bc7">OwnerID</a>, <a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *<a class="el" href="#a3546806ef83b2afbafeefcb0298797bf">Runnable</a>, const TArray&lt; FVector &gt; &amp;<a class="el" href="#a1a82c32afcbd5f7092d1d7edc405f28b">PathPoints</a>)</td></tr>
+<tr class="memitem:a8755fabf39206bac79d82809fe0e0532" id="r_a8755fabf39206bac79d82809fe0e0532"><td class="memItemLeft" align="right" valign="top"><a id="a8755fabf39206bac79d82809fe0e0532" name="a8755fabf39206bac79d82809fe0e0532"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FNavTaskData</b> (const int32 <a class="el" href="#a382f39cb8271b4b8c65eed28e8865bc7">OwnerID</a>, <a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *<a class="el" href="#a3546806ef83b2afbafeefcb0298797bf">Runnable</a>)</td></tr>
 <tr class="memitem:abd7dc3032a6db2de4dae98b128e930b2" id="r_abd7dc3032a6db2de4dae98b128e930b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd7dc3032a6db2de4dae98b128e930b2">CleanUp</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -109,77 +116,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1a82c32afcbd5f7092d1d7edc405f28b" id="r_a1a82c32afcbd5f7092d1d7edc405f28b"><td class="memItemLeft" align="right" valign="top">TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a82c32afcbd5f7092d1d7edc405f28b">PathPoints</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00006">6</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac1c038e6e5301a527635a3d4488253ca" name="ac1c038e6e5301a527635a3d4488253ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1c038e6e5301a527635a3d4488253ca">&#9670;&#160;</a></span>FNavTaskData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FNavTaskData::FNavTaskData </td>
-          <td>(</td>
-          <td class="paramtype">const int32</td>          <td class="paramname"><span class="paramname"><em>OwnerID</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *</td>          <td class="paramname"><span class="paramname"><em>Runnable</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const TArray&lt; FVector &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>PathPoints</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00014">14</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
-
-</div>
-</div>
-<a id="a8755fabf39206bac79d82809fe0e0532" name="a8755fabf39206bac79d82809fe0e0532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8755fabf39206bac79d82809fe0e0532">&#9670;&#160;</a></span>FNavTaskData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FNavTaskData::FNavTaskData </td>
-          <td>(</td>
-          <td class="paramtype">const int32</td>          <td class="paramname"><span class="paramname"><em>OwnerID</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_f_nav_swarms_runnable.html">FNavSwarmsRunnable</a> *</td>          <td class="paramname"><span class="paramname"><em>Runnable</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00021">21</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Stores the thread and the path of a singular ID. </p>
+<p>In order to easily acess the most important information about each ID this class stored them for easy acess. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="abd7dc3032a6db2de4dae98b128e930b2" name="abd7dc3032a6db2de4dae98b128e930b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd7dc3032a6db2de4dae98b128e930b2">&#9670;&#160;</a></span>CleanUp()</h2>
 
@@ -202,8 +141,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00028">28</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
+<p>Checks if there's still a thread running it kills it and clears the pointer </p>
 
 </div>
 </div>
@@ -219,8 +157,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00008">8</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
+<p>The related ID to this task data </p>
 
 </div>
 </div>
@@ -235,8 +172,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00010">10</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
+<p>The latest path found </p>
 
 </div>
 </div>
@@ -251,8 +187,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_nav_task_data_8h_source.html#l00009">9</a> of file <a class="el" href="_nav_task_data_8h_source.html">NavTaskData.h</a>.</p>
+<p>The thread currently running the query </p>
 
 </div>
 </div>

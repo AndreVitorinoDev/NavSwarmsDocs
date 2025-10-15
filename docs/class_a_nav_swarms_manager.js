@@ -1,6 +1,8 @@
 var class_a_nav_swarms_manager =
 [
+    [ "GetHeadingVectorAtDistance", "class_a_nav_swarms_manager.html#a7b70eb3fb71123240dbfaebc45c86c26", null ],
     [ "GetPathfinder", "class_a_nav_swarms_manager.html#a85dff1dae25ca0dd4d63f963c108e4e0", null ],
+    [ "GetPathPointAtDistance", "class_a_nav_swarms_manager.html#a68842b906d3c9775bf440530f7a6780d", null ],
     [ "GetPathPoints", "class_a_nav_swarms_manager.html#a63a32835c0300777a8f11b19e19b63ad", null ],
     [ "OnPathReady", "class_a_nav_swarms_manager.html#a062345205248cf0b5f954d288cd60e48", null ],
     [ "RemoveFromNavManager", "class_a_nav_swarms_manager.html#a8c63adcf6f3badffc1fd290ee1004d90", null ],
